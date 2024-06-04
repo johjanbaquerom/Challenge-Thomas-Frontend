@@ -1,0 +1,8 @@
+<div class="container mt-5">
+    <h2>Inventarios</h2>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let inventario of inventarios">
+        Producto ID: {{ inventario.productoId }} - Cantidad: {{ inventario.cantidad }}
+      </li>
+    </ul>
+  </div>

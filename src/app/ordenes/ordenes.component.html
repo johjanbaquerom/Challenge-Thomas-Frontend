@@ -1,0 +1,15 @@
+<div class="container mt-5">
+    <h2>Top 5 Productos Más Vendidos</h2>
+    <ul class="list-group mb-4">
+      <li class="list-group-item" *ngFor="let orden of topMasVendidos">
+        {{ orden.cliente }} - ${{ orden.total }}
+      </li>
+    </ul>
+  
+    <h2>Top 5 Clientes Frecuentes</h2>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let orden of topClientesFrecuentes">
+        {{ orden.cliente }} - ${{ orden.total }}
+      </li>
+    </ul>
+  </div>
